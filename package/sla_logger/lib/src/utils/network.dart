@@ -3,9 +3,6 @@ import 'dart:developer';
 import 'package:connectivity_plus/connectivity_plus.dart';
 
 class NetworkUtils {
-  factory NetworkUtils() => _singleton;
-  static final _singleton = NetworkUtils();
-
   /// check internet connection if available
   Future<bool> checkInternet() async {
     try {
